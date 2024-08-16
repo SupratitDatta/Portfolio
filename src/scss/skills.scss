@@ -1,0 +1,238 @@
+@import 'variables';
+
+.skill {
+    height: 100vh;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        color: $secondary-color;
+    }
+
+    .skills {
+        color: $primary-color;
+    }
+
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: $primary-color;
+        font-size: 20px;
+        position: relative;
+
+        .what {
+            color: $secondary-color;
+            margin-right: 5px;
+        }
+
+        .i {
+            color: rgb(235, 85, 115);
+            margin-right: 5px;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 3vw;
+            height: 3px;
+            background-color: $primary-color;
+        }
+
+        &::before {
+            left: 0;
+            margin-left: 35vw;
+            transform: translateY(-50%);
+            background-color: $secondary-color;
+        }
+
+        &::after {
+            right: 0;
+            margin-right: 35vw;
+            transform: translateY(-50%);
+        }
+    }
+
+    .skill-content {
+        text-align: justify;
+        text-justify: inter-word;
+
+        .tech-know {
+            color: $secondary-color;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+
+            .logies {
+                color: $primary-color;
+            }
+        }
+
+        .techno {
+            margin: 1vh 0 0 0;
+            gap: 2vw;
+            width: 100%;
+
+            .techno-grid {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1vw;
+
+                .techno-icon {
+                    height: 8vh;
+                    width: auto;
+                    transition: transform 0.3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(2.0);
+                        border: 2px solid $secondary-color;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+
+        .skill-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10;
+            margin-top: 5vh;
+
+            .card {
+                width: calc(24% - 20px);
+                background: #222;
+                color: $secondary-color;
+                text-align: center;
+                border-radius: 6px;
+                padding: 20px 30px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 1px 1px 10px 10px rgba(255, 255, 255, 0.2);
+                transition: transform 0.3s, box-shadow 0.3s;
+
+                &:hover {
+                    background: $primary-color;
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+                    .box {
+                        .text {
+                            color: $secondary-color;
+                            cursor: pointer;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 3px;
+                                left: 0;
+                                bottom: -3px;
+                                background: $secondary-color;
+                                border-radius: 5px;
+                                transform-origin: right;
+                                transform: scaleX(0);
+                                transition: transform 0.5s;
+                            }
+
+                            &:hover::after {
+                                transform-origin: left;
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                }
+
+                .box {
+                    transition: all 0.3s ease;
+                }
+
+                i {
+                    font-size: 50px;
+                    color: $primary-color;
+                    transition: color 0.3s ease;
+                }
+
+                p {
+                    word-spacing: 3px;
+                }
+
+                &:hover i {
+                    color: $secondary-color;
+                }
+
+                .text {
+                    color: $primary-color;
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin: 4vh 0 4vh 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skill {
+        height: auto;
+
+        .subtitle {
+            &::before {
+                margin-left: 25vw;
+            }
+
+            &::after {
+                margin-right: 25vw;
+            }
+        }
+
+        .skill-content {
+            margin-top: 6vh;
+
+            .tech-know {
+                font-size: 30px;
+            }
+
+            .techno {
+                margin: 3vh 0 2vh 0;
+                justify-content: center;
+
+                .techno-grid {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 0.5rem;
+
+                    .techno-icon {
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .skill-cards {
+                flex-direction: column;
+                margin-bottom: 0vh;
+
+                .card {
+                    width: 80vw;
+                    margin-bottom: 5vh;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    p {
+                        font-size: 20px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

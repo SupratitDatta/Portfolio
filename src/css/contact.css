@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.contact {
+  height: 100vh;
+}
+.contact .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.contact .me {
+  color: crimson;
+}
+.contact .subtitle {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  color: crimson;
+  font-size: 20px;
+  position: relative;
+}
+.contact .subtitle .connect {
+  color: white;
+}
+.contact .subtitle .with {
+  color: rgb(235, 85, 115);
+}
+.contact .subtitle::before, .contact .subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 3vw;
+  height: 3px;
+  background-color: crimson;
+}
+.contact .subtitle::before {
+  left: 0;
+  margin-left: 33vw;
+  transform: translateY(-50%);
+  background-color: white;
+}
+.contact .subtitle::after {
+  right: 0;
+  margin-right: 33vw;
+  transform: translateY(-50%);
+}
+.contact .contact-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact .contact-data .contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: calc(50% - 5vw);
+  height: 67vh;
+  padding-top: 5vh;
+  padding-bottom: 6vh;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+.contact .contact-data .contact-left .get {
+  font-size: 35px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.contact .contact-data .contact-left .get .touch {
+  color: crimson;
+}
+.contact .contact-data .contact-left p {
+  font-size: 20px;
+  margin-top: -2vh;
+  text-align: justify;
+  word-spacing: 2px;
+}
+.contact .contact-data .contact-left .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 2vh;
+}
+.contact .contact-data .contact-left .icons .icon {
+  font-size: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 6vw;
+  cursor: pointer;
+}
+.contact .contact-data .contact-left .icons .icon:hover {
+  color: crimson;
+}
+.contact .contact-data .contact-left .icons .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact .contact-data .contact-left .icons .details h1 {
+  font-size: 16px;
+}
+.contact .contact-data .contact-left .icons .details h2 {
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.contact .contact-data .contact-left .icons:hover .details h2,
+.contact .contact-data .contact-left .icons:hover .details h1 {
+  transform: scale(1.05);
+}
+.contact .contact-data .contact-right {
+  width: 40%;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  border-radius: 20px;
+}
+.contact .contact-data .contact-right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.contact .contact-data .contact-right form .field input,
+.contact .contact-data .contact-right form .field textarea {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #222;
+  border: 2px solid #222;
+  outline: none;
+  color: white;
+}
+.contact .contact-data .contact-right form .field input {
+  height: 7vh;
+  padding-left: 10px;
+}
+.contact .contact-data .contact-right form .field input::placeholder {
+  color: white;
+}
+.contact .contact-data .contact-right form .field textarea {
+  padding: 10px;
+  color: white;
+  background-position: center center;
+}
+.contact .contact-data .contact-right form .field textarea::placeholder {
+  color: white;
+}
+.contact .contact-data .contact-right form .button-area {
+  width: 100%;
+}
+.contact .contact-data .contact-right form .button-area button {
+  width: 100%;
+  padding: 6px;
+  border: 3px solid crimson;
+  border-radius: 8px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.contact .contact-data .contact-right form .button-area button:hover {
+  background-color: rgb(186, 1, 38);
+  border: 2px solid crimson;
+  transform: scaley(1.1);
+}
+.contact .footer {
+  background: #222;
+  padding: 8px 23px;
+  color: #fff;
+  text-align: center;
+}
+.contact .footer span a {
+  color: crimson;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact .footer span a:hover {
+  text-decoration: underline;
+}
+.contact .footer .copyright {
+  color: #222;
+  background-color: #ffffff;
+  border: 1.5px solid white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    height: fit-content;
+  }
+  .contact .subtitle::before {
+    margin-left: 18vw;
+  }
+  .contact .subtitle::after {
+    margin-right: 18vw;
+  }
+  .contact .contact-data {
+    flex-direction: column;
+  }
+  .contact .contact-data .contact-left {
+    width: 90vw;
+    height: fit-content;
+  }
+  .contact .contact-data .contact-left .get {
+    font-size: 30px;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+  }
+  .contact .contact-data .contact-left p {
+    margin-bottom: 2vh;
+  }
+  .contact .contact-data .contact-left .icons .icon {
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+  .contact .contact-data .contact-right {
+    width: 90vw;
+    padding-top: 0vh;
+    padding-left: 0;
+  }
+  .contact .contact-data .contact-right form {
+    height: 30vh;
+    margin-top: 0vh;
+    width: 100%;
+  }
+  .contact .contact-data .contact-right form .field {
+    margin-bottom: 1vh;
+  }
+  .contact .footer {
+    margin-top: 6vh;
+  }
+  section {
+    padding-bottom: 0vh;
+  }
+}

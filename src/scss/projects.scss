@@ -1,0 +1,177 @@
+@import 'variables';
+
+.project {
+    height: fit-content;
+    overflow-x: hidden;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        color: $secondary-color;
+    }
+
+    .pro {
+        color: $primary-color;
+    }
+
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: $primary-color;
+        font-size: 20px;
+        position: relative;
+
+        .what {
+            color: $secondary-color;
+            margin-right: 8px;
+        }
+
+        .created {
+            color: rgb(235, 85, 115);
+            margin-right: 8px;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 3vw;
+            height: 3px;
+            background-color: $primary-color;
+        }
+
+        &::before {
+            left: 0;
+            margin-left: 31vw;
+            transform: translateY(-50%);
+            background-color: $secondary-color;
+        }
+
+        &::after {
+            right: 0;
+            margin-right: 31vw;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.project-icon {
+    height: 11vh;
+    width: 11vh;
+    border-radius: 50%;
+    transition: transform 0.25s ease-in-out, border-radius 0.25s ease-in-out, width 0.25s ease-in-out, border 0.25s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        width: auto;
+        transform: scale(3.5) translateY(-5px);
+        border-radius: 10px;
+        z-index: 100;
+        border: 1.5px solid $secondary-color;
+    }
+}
+
+.timeline-date {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-details {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    .project-title {
+        font-size: 30px;
+        color: $primary-color;
+
+        .github-link {
+            margin-top: 10px;
+            display: inline-block;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #0d64c1;
+            }
+
+            .github-icon {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .project-framework {
+        font-size: 20px;
+        color: $secondary-color;
+    }
+}
+
+.project-points {
+    z-index: -10;
+    text-align: justify;
+    margin-top: 10px;
+
+    .pnt {
+        margin-bottom: 1vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        .subtitle {
+            &::before {
+                margin-left: 13vw;
+            }
+
+            &::after {
+                margin-right: 13vw;
+            }
+        }
+    }
+
+    .project-icon {
+        height: 8vh;
+        margin-left: -15px;
+        margin-top: -10px;
+        width: 8vh;
+        z-index: 1000;
+
+        &:hover {
+            transform: scale(2.5) translateY(-30px) translateX(52px);
+        }
+    }
+
+    .vertical-projects {
+        width: 95vw;
+        height: fit-content;
+    }
+
+    .project-details {
+        .project-title {
+            font-size: 30px;
+        }
+
+        .project-framework {
+            font-size: 20px;
+        }
+    }
+
+    .project-points {
+        font-size: 15px;
+        text-align: justify;
+
+        .pnt {
+            margin-bottom: 1vh;
+            margin-left: 1vw;
+        }
+    }
+}

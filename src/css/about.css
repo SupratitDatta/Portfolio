@@ -1,0 +1,163 @@
+.about {
+  height: 100vh;
+}
+.about .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.about .view {
+  color: crimson;
+}
+.about .subtitle {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  color: crimson;
+  font-size: 20px;
+  position: relative;
+}
+.about .subtitle .who {
+  color: white;
+  margin-right: 5px;
+}
+.about .subtitle .i {
+  color: rgb(235, 85, 115);
+  margin-right: 5px;
+}
+.about .subtitle::before, .about .subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 3vw;
+  height: 3px;
+  background-color: crimson;
+}
+.about .subtitle::before {
+  left: 0;
+  margin-left: 36vw;
+  transform: translateY(-50%);
+  background-color: white;
+}
+.about .subtitle::after {
+  right: 0;
+  margin-right: 36vw;
+  transform: translateY(-50%);
+}
+.about .about-content {
+  text-align: justify;
+  text-justify: inter-word;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.about .about-content .my-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.about .about-content .my-details .profile-picture {
+  height: 35vh;
+  width: auto;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 5px solid crimson;
+  transition: transform 0.5s ease-in, border-radius 0.5s ease-in;
+}
+.about .about-content .my-details .profile-picture:hover {
+  transform: scale(1.25);
+  border-radius: 25%;
+}
+.about .about-content .my-details .about-me {
+  color: white;
+  background-color: rgba(35, 35, 35, 0.5);
+  padding: 10px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5vh;
+  width: 42vw;
+}
+.about .about-content .designs {
+  margin-top: 2vh;
+}
+.about .about-content .designs ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+}
+.about .about-content .designs ul li {
+  font-size: 53px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 0.5px white;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.about .about-content .designs ul li::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: crimson;
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.about .about-content .designs ul li:hover::after {
+  animation: moveText 0.5s linear both;
+}
+@keyframes moveText {
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    overflow-x: hidden;
+    height: fit-content;
+  }
+  .about .subtitle::before {
+    margin-left: 30vw;
+  }
+  .about .subtitle::after {
+    margin-right: 30vw;
+  }
+  .about .about-content {
+    flex-direction: column;
+  }
+  .about .about-content .my-details {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+    justify-content: space-around;
+  }
+  .about .about-content .my-details .profile-picture {
+    height: 20vh;
+  }
+  .about .about-content .my-details .about-me {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+  }
+  .about .about-content .right {
+    padding-top: 1vh;
+  }
+  .about .about-content .designs ul li {
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    margin: auto;
+    -webkit-text-stroke: 0px;
+  }
+}

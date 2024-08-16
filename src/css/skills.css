@@ -1,0 +1,195 @@
+.skill {
+  height: 100vh;
+}
+.skill .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.skill .skills {
+  color: crimson;
+}
+.skill .subtitle {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  color: crimson;
+  font-size: 20px;
+  position: relative;
+}
+.skill .subtitle .what {
+  color: white;
+  margin-right: 5px;
+}
+.skill .subtitle .i {
+  color: rgb(235, 85, 115);
+  margin-right: 5px;
+}
+.skill .subtitle::before, .skill .subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 3vw;
+  height: 3px;
+  background-color: crimson;
+}
+.skill .subtitle::before {
+  left: 0;
+  margin-left: 35vw;
+  transform: translateY(-50%);
+  background-color: white;
+}
+.skill .subtitle::after {
+  right: 0;
+  margin-right: 35vw;
+  transform: translateY(-50%);
+}
+.skill .skill-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.skill .skill-content .tech-know {
+  color: white;
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.skill .skill-content .tech-know .logies {
+  color: crimson;
+}
+.skill .skill-content .techno {
+  margin: 1vh 0 0 0;
+  gap: 2vw;
+  width: 100%;
+}
+.skill .skill-content .techno .techno-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.skill .skill-content .techno .techno-grid .techno-icon {
+  height: 8vh;
+  width: auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.skill .skill-content .techno .techno-grid .techno-icon:hover {
+  transform: scale(2);
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.skill .skill-content .skill-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10;
+  margin-top: 5vh;
+}
+.skill .skill-content .skill-cards .card {
+  width: calc(24% - 20px);
+  background: #222;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 1px 1px 10px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.skill .skill-content .skill-cards .card:hover {
+  background: crimson;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.skill .skill-content .skill-cards .card:hover .box .text {
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+.skill .skill-content .skill-cards .card:hover .box .text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+  background: white;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.skill .skill-content .skill-cards .card:hover .box .text:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.skill .skill-content .skill-cards .card .box {
+  transition: all 0.3s ease;
+}
+.skill .skill-content .skill-cards .card i {
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
+}
+.skill .skill-content .skill-cards .card p {
+  word-spacing: 3px;
+}
+.skill .skill-content .skill-cards .card:hover i {
+  color: white;
+}
+.skill .skill-content .skill-cards .card .text {
+  color: crimson;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 4vh 0 4vh 0;
+}
+
+@media screen and (max-width: 768px) {
+  .skill {
+    height: auto;
+  }
+  .skill .subtitle::before {
+    margin-left: 25vw;
+  }
+  .skill .subtitle::after {
+    margin-right: 25vw;
+  }
+  .skill .skill-content {
+    margin-top: 6vh;
+  }
+  .skill .skill-content .tech-know {
+    font-size: 30px;
+  }
+  .skill .skill-content .techno {
+    margin: 3vh 0 2vh 0;
+    justify-content: center;
+  }
+  .skill .skill-content .techno .techno-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .skill .skill-content .techno .techno-grid .techno-icon {
+    height: 2rem;
+  }
+  .skill .skill-content .skill-cards {
+    flex-direction: column;
+    margin-bottom: 0vh;
+  }
+  .skill .skill-content .skill-cards .card {
+    width: 80vw;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .skill .skill-content .skill-cards .card p {
+    font-size: 20px;
+    text-align: justify;
+  }
+}

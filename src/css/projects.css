@@ -1,0 +1,145 @@
+.project {
+  height: fit-content;
+  overflow-x: hidden;
+}
+.project .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.project .pro {
+  color: crimson;
+}
+.project .subtitle {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  color: crimson;
+  font-size: 20px;
+  position: relative;
+}
+.project .subtitle .what {
+  color: white;
+  margin-right: 8px;
+}
+.project .subtitle .created {
+  color: rgb(235, 85, 115);
+  margin-right: 8px;
+}
+.project .subtitle::before, .project .subtitle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 3vw;
+  height: 3px;
+  background-color: crimson;
+}
+.project .subtitle::before {
+  left: 0;
+  margin-left: 31vw;
+  transform: translateY(-50%);
+  background-color: white;
+}
+.project .subtitle::after {
+  right: 0;
+  margin-right: 31vw;
+  transform: translateY(-50%);
+}
+
+.project-icon {
+  height: 11vh;
+  width: 11vh;
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out, border-radius 0.25s ease-in-out, width 0.25s ease-in-out, border 0.25s ease-in-out;
+  cursor: pointer;
+}
+.project-icon:hover {
+  width: auto;
+  transform: scale(3.5) translateY(-5px);
+  border-radius: 10px;
+  z-index: 100;
+  border: 1.5px solid white;
+}
+
+.timeline-date {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.project-details {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.project-details .project-title {
+  font-size: 30px;
+  color: crimson;
+}
+.project-details .project-title .github-link {
+  margin-top: 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+.project-details .project-title .github-link:hover {
+  color: #0d64c1;
+}
+.project-details .project-title .github-link .github-icon {
+  margin-left: 10px;
+}
+.project-details .project-framework {
+  font-size: 20px;
+  color: white;
+}
+
+.project-points {
+  z-index: -10;
+  text-align: justify;
+  margin-top: 10px;
+}
+.project-points .pnt {
+  margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+  .project .subtitle::before {
+    margin-left: 13vw;
+  }
+  .project .subtitle::after {
+    margin-right: 13vw;
+  }
+  .project-icon {
+    height: 8vh;
+    margin-left: -15px;
+    margin-top: -10px;
+    width: 8vh;
+    z-index: 1000;
+  }
+  .project-icon:hover {
+    transform: scale(2.5) translateY(-30px) translateX(52px);
+  }
+  .vertical-projects {
+    width: 95vw;
+    height: fit-content;
+  }
+  .project-details .project-title {
+    font-size: 30px;
+  }
+  .project-details .project-framework {
+    font-size: 20px;
+  }
+  .project-points {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .project-points .pnt {
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+  }
+}

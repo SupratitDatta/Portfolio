@@ -1,0 +1,201 @@
+@import 'variables';
+
+.about {
+    height: 100vh;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 2vh;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        color: $secondary-color;
+    }
+
+    .view {
+        color: $primary-color;
+    }
+
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: $primary-color;
+        font-size: 20px;
+        position: relative;
+
+        .who {
+            color: $secondary-color;
+            margin-right: 5px;
+        }
+
+        .i {
+            color: rgb(235, 85, 115);
+            margin-right: 5px;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 3vw;
+            height: 3px;
+            background-color: $primary-color;
+        }
+
+        &::before {
+            left: 0;
+            margin-left: 36vw;
+            transform: translateY(-50%);
+            background-color: $secondary-color;
+        }
+
+        &::after {
+            right: 0;
+            margin-right: 36vw;
+            transform: translateY(-50%);
+        }
+    }
+
+    .about-content {
+        text-align: justify;
+        text-justify: inter-word;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .my-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .profile-picture {
+                height: 35vh;
+                width: auto;
+                display: flex;
+                margin: auto;
+                border-radius: 50%;
+                cursor: pointer;
+                border: 5px solid $primary-color;
+                transition: transform 0.5s ease-in, border-radius 0.5s ease-in;
+                            
+                &:hover {
+                    transform: scale(1.25);
+                    border-radius: 25%;
+                }
+            }
+
+            .about-me {
+                color: $secondary-color;
+                background-color: rgba(35, 35, 35, 0.5);
+                padding: 10px 10px;
+                border-radius: 20px;
+                font-size: 20px;
+                font-weight: 500;
+                margin-top: 5vh;
+                width: 42vw;
+            }
+        }
+
+        .designs {
+            margin-top: 2vh;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin: auto;
+
+                li {
+                    font-size: 53px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    color: transparent;
+                    -webkit-text-stroke: 0.5px $secondary-color;
+                    word-spacing: 5px;
+                    letter-spacing: 2px;
+                    position: relative;
+
+                    &::after {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: crimson;
+                        width: 0px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+
+                    &:hover {
+                        &::after {
+                            animation: moveText 0.5s linear both;
+
+                            @keyframes moveText {
+                                to {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        overflow-x: hidden;
+        height: fit-content;
+
+        .subtitle {
+            &::before {
+                margin-left: 30vw;
+            }
+
+            &::after {
+                margin-right: 30vw;
+            }
+        }
+
+        .about-content {
+            flex-direction: column;
+
+            .my-details {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 4vh;
+                justify-content: space-around;
+
+                .profile-picture {
+                    height: 20vh;
+                }
+
+                .about-me {
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 3vh;
+                }
+            }
+
+            .right {
+                padding-top: 1vh;
+            }
+
+            .designs {
+                ul {
+                    li {
+                        font-size: 30px;
+                        color: $secondary-color;
+                        justify-content: center;
+                        margin: auto;
+                        -webkit-text-stroke: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
