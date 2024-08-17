@@ -200,44 +200,44 @@
   transform: translateX(50%) rotateZ(-45deg);
 }
 .home .shooting_star:nth-child(1) {
-  top: calc(50% - 36px);
-  left: calc(50% - 263px);
-  animation-delay: 5949ms;
+  top: calc(50% - -103px);
+  left: calc(50% - 185px);
+  animation-delay: 6695ms;
 }
 .home .shooting_star:nth-child(1)::before, .home .shooting_star:nth-child(1)::after {
-  animation-delay: 5949ms;
+  animation-delay: 6695ms;
 }
 .home .shooting_star:nth-child(2) {
-  top: calc(50% - 121px);
-  left: calc(50% - 211px);
-  animation-delay: 8108ms;
+  top: calc(50% - 133px);
+  left: calc(50% - 141px);
+  animation-delay: 9570ms;
 }
 .home .shooting_star:nth-child(2)::before, .home .shooting_star:nth-child(2)::after {
-  animation-delay: 8108ms;
+  animation-delay: 9570ms;
 }
 .home .shooting_star:nth-child(3) {
-  top: calc(50% - 116px);
-  left: calc(50% - 226px);
-  animation-delay: 323ms;
+  top: calc(50% - 172px);
+  left: calc(50% - 191px);
+  animation-delay: 8708ms;
 }
 .home .shooting_star:nth-child(3)::before, .home .shooting_star:nth-child(3)::after {
-  animation-delay: 323ms;
+  animation-delay: 8708ms;
 }
 .home .shooting_star:nth-child(4) {
-  top: calc(50% - -191px);
-  left: calc(50% - 27px);
-  animation-delay: 6291ms;
+  top: calc(50% - -137px);
+  left: calc(50% - 69px);
+  animation-delay: 4551ms;
 }
 .home .shooting_star:nth-child(4)::before, .home .shooting_star:nth-child(4)::after {
-  animation-delay: 6291ms;
+  animation-delay: 4551ms;
 }
 .home .shooting_star:nth-child(5) {
-  top: calc(50% - 115px);
-  left: calc(50% - 7px);
-  animation-delay: 9904ms;
+  top: calc(50% - -144px);
+  left: calc(50% - 283px);
+  animation-delay: 2095ms;
 }
 .home .shooting_star:nth-child(5)::before, .home .shooting_star:nth-child(5)::after {
-  animation-delay: 9904ms;
+  animation-delay: 2095ms;
 }
 @media screen and (max-width: 768px) {
   .home {
@@ -265,11 +265,11 @@
   .home .left .home-detail .btn {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    white-space: nowrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   .home .left .home-detail .btn a {
-    padding: 10px 3vw;
+    padding: 5px 3vw;
   }
   .home .right {
     margin-bottom: 10vh;

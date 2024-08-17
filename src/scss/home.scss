@@ -280,11 +280,11 @@
                 .btn {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
-                    white-space: nowrap;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
 
                     a {
-                        padding: 10px 3vw;
+                        padding: 5px 3vw;
                     }
                 }
             }

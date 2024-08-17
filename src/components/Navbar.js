@@ -83,7 +83,7 @@ function Navbar() {
                                 </div>
                             </div>
                         </div>
-                        <a className='port' href="#home"><img alt='S' src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif" className='logoPic'></img>Port<span>folio</span></a>
+                        <a className='port' href="#home"><img alt='S' src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif" className='logoPic'></img><span>Port</span><span>folio</span></a>
                     </div>
                     <div>
                         <ul className='media-icon'>
@@ -95,7 +95,6 @@ function Navbar() {
                     </div>
                     <div>
                         <ul className="menu navigation hide">
-                            <li className="logoPic"><img alt="S" src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif" className='logoPic'></img></li>
                             <li><a href="#home" className="menu-btn" onClick={smoothScroll}>Home</a></li>
                             <li><a href="#about" className="menu-btn" onClick={smoothScroll}>About</a></li>
                             <li><a href="#skill" className="menu-btn" onClick={smoothScroll}>Skills</a></li>

@@ -295,6 +295,10 @@
 
                 .port {
                     .logoPic {
+                        transform: scaleX(1);
+                    }
+
+                    span {
                         display: none;
                     }
                 }

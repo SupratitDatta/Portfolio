@@ -225,6 +225,9 @@
     margin-left: 0;
   }
   .navbar .container .logo .port .logoPic {
+    transform: scaleX(1);
+  }
+  .navbar .container .logo .port span {
     display: none;
   }
   .navbar .container .media-icon {

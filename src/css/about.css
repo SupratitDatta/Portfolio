@@ -102,6 +102,7 @@
   word-spacing: 5px;
   letter-spacing: 2px;
   position: relative;
+  text-wrap: nowrap;
 }
 .about .about-content .designs ul li::after {
   position: absolute;
@@ -127,10 +128,10 @@
     height: fit-content;
   }
   .about .subtitle::before {
-    margin-left: 30vw;
+    margin-left: 225vw;
   }
   .about .subtitle::after {
-    margin-right: 30vw;
+    margin-right: 25vw;
   }
   .about .about-content {
     flex-direction: column;
