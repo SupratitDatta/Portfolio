@@ -128,7 +128,7 @@
     height: fit-content;
   }
   .about .subtitle::before {
-    margin-left: 225vw;
+    margin-left: 25vw;
   }
   .about .subtitle::after {
     margin-right: 25vw;
