@@ -42,7 +42,7 @@ function Contact() {
     const rightRef = useRef(null);
 
     const formRef = useRef();
-    const [,setError] = useState(false);
+    const [, setError] = useState(false);
     const [, setSuccess] = useState(false);
 
     const sendEmail = (e) => {
@@ -92,7 +92,7 @@ function Contact() {
                 <div className='contact-data'>
                     <motion.div className='contact-left' ref={leftRef} initial={{ x: -100 }} animate={{ x: inView ? 0 : -100 }} transition={{ duration: 0.5 }}>
                         {/* <h1 className='get'>Get I<span className="touch">n Touch</span></h1> */}
-                        <p>Thank you for visiting my profile. If you are interested in connecting or collaborating with me, please feel free to send me an email.</p>
+                        <p>Thank you for visiting my profile. If you're interested in connecting, collaborating, or looking to hire me, please feel free to send me an email.</p>
                         {/* <div className="user icons">
                             <FontAwesomeIcon icon={faUser} className="icon" />
                             <div className="details">
@@ -141,7 +141,7 @@ function Contact() {
                 </div>
             </div>
             <div className="footer">
-                <span>Created By <a href='https://github.com/SupratitDatta/' target='_blank' rel="noopener noreferrer">Supratit Datta</a> | <FontAwesomeIcon className="copyright icon" icon={faCopyright} /> 2024 All rights reserved.</span>
+                <span>Created By <a href='https://github.com/SupratitDatta/' target='_blank' rel="noopener noreferrer">Supratit Datta</a> | <FontAwesomeIcon className="copyright icon" icon={faCopyright} /> 2024</span>
             </div>
             <ToastContainer />
         </section>

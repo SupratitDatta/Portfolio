@@ -1,105 +1,71 @@
 [
     {
-        "title": "Lights Out Game",
-        "frameworks": "ReactJs, Javascript, HTML, CSS",
+        "title": "Profit Pulse",
+        "frameworks": "React, Javascript, CSS, Python, TensorFlow, Node.js, Git",
+        "date": "July 2024",
         "icon": "project1",
-        "date": "July 2023",
         "points": [
-            "This is a game developed using ReactJs where a grid of lights are present.",
-            "On clicking a light it turns on/off but its surrounding lights also switch their state.",
-            "The user has to turn off all the lights to win.",
-            "It has a responsive design and ensures cross-browser compatibility."
+            "A web application where traders can input their data to receive Reorder Point (ROP), Return on Investment (ROI), and Stock analysis using an ML model.",
+            "Integrated the client-side with the model through APIs.",
+            "Developed features for data input, real-time analysis, and user authentication using Firebase for secure access."
         ],
-        "githubLink": "https://github.com/SupratitDatta/Lights-Out-Game"
+        "githubLink": "https://github.com/SupratitDatta/Profit-Pulse"
     },
     {
-        "title": "Wonder Ways",
-        "frameworks": "ReactJS, CSS, Git",
+        "title": "Novel Net",
+        "frameworks": "React Native, TypeScript, TailwindCSS, Expo, Git",
+        "date": "June 2024",
         "icon": "project2",
-        "date": "August 2023",
         "points": [
-            "Wonder Ways is an online Tourism Ticket booking website offering a wonderful dream destination packages for complete tours.",
-            "Users can view various tourism packages, get to know the place, and get reviews from the website."
+            "An online book app where users can read books, explore a variety of genres, and add them to their favorites.",
+            "Implemented an intuitive book browsing feature that increased user engagement by enabling seamless navigation through 100+ titles.",
+            "Developed a favorites management system for personalized experiences."
         ],
-        "githubLink": "https://github.com/SupratitDatta/Wonder-Ways"
+        "githubLink": "https://github.com/SupratitDatta/Novel-Net"
+    },
+    {
+        "title": "Pristine",
+        "frameworks": "React, TypeScript, SCSS, Node.js, Express.js, MongoDB, Firebase, Leaflet, Git",
+        "date": "May 2024",
+        "icon": "project3",
+        "points": [
+            "A Real Estate website that allows users to browse a variety of properties (50+) available for rent or purchase.",
+            "Users can log in using integrated Firebase Authentication, select properties, view details and images, explore maps, and post their own listings."
+        ],
+        "githubLink": "https://github.com/SupratitDatta/Pristine"
+    },
+    {
+        "title": "Tech Trove",
+        "frameworks": "Next.js, TailwindCSS, Node.js, MongoDB, NextAuth, Cloudinary, Git",
+        "date": "March 2024",
+        "icon": "project4",
+        "points": [
+            "Crafted an immersive e-commerce platform featuring a wide selection of electronic gadgets, organized into categories and sections with search filters.",
+            "Integrated NextAuth for user authentication, enabling users to log in, add products to the cart, and make purchases.",
+            "Created an admin panel for managing products and categories, including adding, updating, removing items, viewing orders, and checking payment status."
+        ],
+        "githubLink": "https://github.com/SupratitDatta"
+    },
+    {
+        "title": "Pulse News",
+        "frameworks": "React, Javascript, CSS, Git",
+        "date": "January 2024",
+        "icon": "project5",
+        "points": [
+            "An interactive website offering real-time news updates across multiple categories with accurate source and date.",
+            "Includes a search bar and categorized sections for personalized, user-specific news content."
+        ],
+        "githubLink": "https://github.com/SupratitDatta/Pulse-News"
     },
     {
         "title": "Rail Ease",
         "frameworks": "HTML, CSS, PHP, SQL, Git",
-        "icon": "project3",
-        "date": "September 2023",
+        "icon": "project6",
+        "date": "December 2023",
         "points": [
             "Developed a convenient Train Ticket booking platform where users can book, cancel, and view their tickets.",
             "An admin panel is also present for admins to add or remove any Train."
         ],
         "githubLink": "https://github.com/SupratitDatta/Rail-Ease"
-    },
-    {
-        "title": "Corona Detector from X-ray",
-        "frameworks": "HTML, SASS, ReactJS, Python, TensorFlow, Git",
-        "icon": "project4",
-        "date": "Nov 2023 - Dec 2023",
-        "points": [
-            "A collaborative project which utilizes a website interface where users upload rib X-rays to check the presence of COVID-19 infection showing you the most probable result with its probability.",
-            "My contribution focused mainly on frontend development, seamlessly integrating it with the backend ML model through APIs."
-        ],
-        "githubLink": "https://github.com/SupratitDatta/"
-    },
-    {
-        "title": "Restaurant Website",
-        "frameworks": "ReactJs, CSS, SASS, Node.js, Express.js, MongoDB, Git",
-        "icon": "project5",
-        "date": "Dec 2023",
-        "points": [
-            "Developed a restaurant website using the MERN stack that showcases various menus and dishes available, along with details about the restaurant.",
-            "The site also allows users to book tables in advance, with reservations stored in MongoDB."
-        ],
-        "githubLink": "https://github.com/SupratitDatta/Restaurant-Website"
-    },
-    {
-        "title": "Abhivyakti Website",
-        "frameworks": "ReactJs, CSS, SASS, Node.js, Express.js, MongoDB, Git",
-        "icon": "project6",
-        "date": "Dec 2023 - Jan 2024",
-        "points": [
-            "Played a major role in the development of the Abhivyakti website, the cultural fest of my college (IIIT,N).",
-            "Developed the event page and profile page, added designs, and made contributions to the backend."
-        ],
-        "githubLink": "https://www.abhivyaktifest.in/home"
-    },
-    {
-        "title": "Youtube Clone",
-        "frameworks": "ReactJs, CSS, SASS, Git",
-        "icon": "project7",
-        "date": "January 2024",
-        "points": [
-            "Developed a React-based YouTube clone featuring various types of video sections, channel visits, video playback, details, and a working search bar.",
-            "Utilized an API to fetch a diverse range of videos displayed across various sections."
-        ],
-        "githubLink": "https://github.com/SupratitDatta/Youtube-Clone"
-    },
-    {
-        "title": "Pulse News",
-        "frameworks": "ReactJs, CSS, SASS, Node.js, Express.js, MongoDB, Git",
-        "icon": "project8",
-        "date": "February 2024",
-        "points": [
-            "Developed a dynamic news platform using React.js, allowing users to access daily news updates fetched from a reliable API.",
-            "Implemented a robust search feature enabling users to quickly find news articles based on keywords and topics.",
-            "Designed a category section for easy navigation, helping users explore news across health, sports, technology, and entertainment."
-        ],
-        "githubLink": "https://github.com/SupratitDatta/Pulse-News"
-    },
-    {
-        "title": "Ecommerce Website",
-        "frameworks": "Next.js, TailwindCSS, Node.js, Express.js, MongoDB, Git",
-        "icon": "project9",
-        "date": "March 2024 - April 2024",
-        "points": [
-            "Crafted an immersive e-commerce platform using Next.js & TailwindCSS for the front-end, showcasing an extensive selection of electronic gadgets.",
-            "An admin panel allows seamless addition and management of products, categories, and orders.",
-            "User and admin sign-in is enabled with Google Auth, allowing them to log in using their Google account."
-        ],
-        "githubLink": "https://github.com/SupratitDatta/"
     }
 ]

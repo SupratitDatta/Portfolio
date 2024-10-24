@@ -3,7 +3,7 @@
   width: 100%;
   z-index: 999;
   padding: 20px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Orbitron", sans-serif;
   transition: all 0.3s ease;
 }
 .navbar .max-width {
@@ -121,8 +121,9 @@
   color: white;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 4rem;
+  margin-left: 3rem;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 .navbar .container .menu li a:hover {
   color: crimson;
@@ -241,12 +242,13 @@
     position: fixed;
     top: 0;
     left: -100%;
-    margin-top: 10vh;
     border-radius: 0px 20px 20px 0px;
-    width: 50vw;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     padding: 2vh 10vw 3vh 0vw;
+    display: flex;
     text-align: center;
+    justify-content: center;
     flex-direction: column;
     transition: left 0.3s ease;
     box-shadow: 0 10px 10px rgba(16, 10, 10, 0.8);
